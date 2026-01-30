@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container mx-auto px-5">
                 <div className="grid md:grid-cols-3 gap-24 max-w-6xl mx-auto mb-6">
                     <div>
-                        <h3 className="text-xl font-serif text-[#D4AF37] mb-4">DA SALVATORE</h3>
+                        <h3 className="text-xl font-extrabold font-serif text-[#D4AF37] mb-4">DA SALVATORE</h3>
                         <p className="text-sm text-gray-400 leading-relaxed">
                             Professional billing and management system<br />
                             for pizza shops. Est. 1987.

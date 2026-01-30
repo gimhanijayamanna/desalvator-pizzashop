@@ -158,7 +158,7 @@ function InvoicePrint({ invoice }: InvoicePrintProps) {
                 <div className="border-b border-[#D4AF37] pb-2 mb-2">
                     <div className="flex justify-between items-start">
                         <div className="text-center flex-1">
-                            <div className="text-[10px] tracking-[0.3em] text-[#8B4513] mb-1">RISTORANTE</div>
+                            <div className="text-[10px] tracking-[0.3em] text-[#8B4513] mb-1">PIZZERIA</div>
                             <h1 className="text-2xl font-serif text-[#1a2332] tracking-wider mb-1">
                                 DA SALVATORE
                             </h1>
@@ -167,7 +167,7 @@ function InvoicePrint({ invoice }: InvoicePrintProps) {
                                 <div className="text-[10px] tracking-widest text-[#8B4513]">EST. 1987</div>
                                 <div className="h-px w-8 bg-[#D4AF37]"></div>
                             </div>
-                            <p className="text-[10px] text-gray-600">123 Italian Street, City, State 12345</p>
+                            <p className="text-[10px] text-gray-600">123 Pizza Street</p>
                             <p className="text-[10px] text-gray-600">Tel: (555) 123-4567 | info@dasalvatore.com</p>
                         </div>
                     </div>

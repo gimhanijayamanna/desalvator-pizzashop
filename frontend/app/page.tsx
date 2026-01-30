@@ -22,7 +22,7 @@ export default function Home() {
                 {/* Image - Takes 3 columns */}
                 <div className="relative md:col-span-3 h-64 md:h-96 bg-gradient-to-br from-amber-900 to-red-900">
                   <img
-                    src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80"
+                    src="/pizza.jpg"
                     alt="Authentic Italian Pizza"
                     className="w-full h-full object-cover"
                   />
@@ -30,15 +30,10 @@ export default function Home() {
 
                 {/* Content - Takes 2 columns */}
                 <div className="md:col-span-2 bg-[#F5F5DC] text-[#1a2332] p-8 flex flex-col justify-center">
-                  <div className="mb-4">
-                    <svg className="w-12 h-12 mx-auto mb-3 opacity-60" viewBox="0 0 100 100" fill="currentColor">
-                      <circle cx="50" cy="50" r="40" stroke="currentColor" strokeWidth="2" fill="none" />
-                      <path d="M50 20 L50 80 M20 50 L80 50" stroke="currentColor" strokeWidth="1" />
-                    </svg>
-                  </div>
+
 
                   <h2 className="text-2xl md:text-3xl font-serif text-center mb-3">
-                    Pizza Shop
+                    <span className="font-extrabold italic"> Pizzeria</span>
                     <br />
                     <span className="italic">Billing System</span>
                   </h2>
