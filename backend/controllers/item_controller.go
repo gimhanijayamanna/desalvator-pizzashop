@@ -277,9 +277,14 @@ func UpdateItem(w http.ResponseWriter, r *http.Request) {
 func DeleteItem(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	params := mux.Vars(r)
-	id := params["id"]
+	idStr := params["id"]
+id, err := strconv.Atoi(idStr)
+if err != nil {
+    http.Error(w, "Invalid item ID", http.StatusBadRequest)
+    return
+}
 
-	result, err := config.DB.Exec("DELETE FROM items WHERE id = $1", id)
+result, err := config.DB.Exec("DELETE FROM items WHERE id = $1", id)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
